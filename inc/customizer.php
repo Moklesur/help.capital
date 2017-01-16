@@ -302,157 +302,7 @@ function themetim_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	/**
-	 * ThemeTim Divider
-	 */
-	$wp_customize->add_setting('themetim_options[divider]', array(
-			'type'              => 'divider_control',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control( new themetim_divider( $wp_customize, 'header_top', array(
-			'label' => __('Header Top', 'themetidy'),
-			'section' => 'title_tagline',
-			'settings' => 'themetim_options[divider]'
-		) )
-	);
-	/********************* Top Header ************************/
-	$wp_customize->add_setting( 'social_header_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'social_header_enable', array(
-		'label' => __( 'Enable Header Social', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('## Please Go Back To Social Media Settings For Social Links ##', 'text_domain'),
-		'section' => 'title_tagline',
-		'settings' => 'social_header_enable'
-	) );
 
-
-	$wp_customize->add_setting( 'top_header_tel_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'top_header_tel_enable', array(
-		'label' => __( 'Enable Tel', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('', 'text_domain'),
-		'section' => 'title_tagline',
-		'settings' => 'top_header_tel_enable'
-	) );
-
-	$wp_customize->add_setting( 'top_header_tel', array(
-		'default'           => '880 1916 404543',
-	) );
-	$wp_customize->add_control( 'top_header_tel', array(
-		'label' => __( 'Phone Number', 'text_domain' ),
-		'type' => 'text',
-		'section' => 'title_tagline',
-		'settings' => 'top_header_tel'
-	) );
-
-	$wp_customize->add_setting( 'top_header_account_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'top_header_account_enable', array(
-		'label' => __( 'Enable Login Register', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('', 'text_domain'),
-		'section' => 'title_tagline',
-		'settings' => 'top_header_account_enable'
-	) );
-
-
-	$wp_customize->add_setting( 'top_header_account', array(
-		'default'           => 'Account',
-	) );
-	$wp_customize->add_control( 'top_header_account', array(
-		'label' => __( 'My Account', 'text_domain' ),
-		'type' => 'text',
-		'section' => 'title_tagline',
-		'settings' => 'top_header_account',
-		'description'   => __('## Title of the link ##', 'text_domain')
-	) );
-
-	$wp_customize->add_setting(
-		'header_myaccount'
-	);
-	$wp_customize->add_control(
-		new WP_Customize_Pages_Control(
-			$wp_customize,
-			'header_myaccount',
-			array(
-				'label'    => 'My Account Page',
-				'settings' => 'header_myaccount',
-				'section'  => 'title_tagline'
-			)
-		)
-	);
-
-	$wp_customize->add_setting(
-		'header_login_register'
-	);
-	$wp_customize->add_control(
-		new WP_Customize_Pages_Control(
-			$wp_customize,
-			'header_login_register',
-			array(
-				'label'    => 'Login / Register Page',
-				'settings' => 'header_login_register',
-				'section'  => 'title_tagline'
-			)
-		)
-	);
-	$wp_customize->add_setting( 'cart_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'cart_enable', array(
-		'label' => __( 'Enable Cart', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('', 'text_domain'),
-		'section' => 'title_tagline',
-		'settings' => 'cart_enable'
-	) );
-	/**
-	 * ThemeTim Divider
-	 */
-	$wp_customize->add_setting('themetim_options[divider]', array(
-			'type'              => 'divider_control',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control( new themetim_divider( $wp_customize, 'header_bottom', array(
-			'label' => __('Bottom Header', 'themetidy'),
-			'section' => 'title_tagline',
-			'settings' => 'themetim_options[divider]'
-		) )
-	);
-
-	$wp_customize->add_setting( 'bottom_header_search', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'bottom_header_search', array(
-		'label' => __( 'Enable Search', 'text_domain' ),
-		'type' => 'checkbox',
-		'section' => 'title_tagline',
-		'settings' => 'bottom_header_search'
-	) );
-	/**
-	 * ThemeTim Divider
-	 */
-	$wp_customize->add_setting('themetim_options[divider]', array(
-			'type'              => 'divider_control',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control( new themetim_divider( $wp_customize, 'header_favicon', array(
-			'label' => __('Favicon', 'themetidy'),
-			'section' => 'title_tagline',
-			'settings' => 'themetim_options[divider]'
-		) )
-	);
 	/*********************************************
 	 * Footer
 	 *********************************************/
@@ -576,64 +426,6 @@ function themetim_customize_register( $wp_customize ) {
 		'section' => 'footer_settings',
 		'settings' => 'bottom_footer_copyright',
 		'description'   => __('', 'text_domain')
-	) );
-	/*********************************************
-	 * Blog
-	 *********************************************/
-	$wp_customize->add_section( 'blog_settings', array(
-		'title' => __( 'Blog', 'text_domain' ),
-		'description' => '',
-		'priority' => 81,
-	) );
-	/**
-	 * ThemeTim Divider
-	 */
-	$wp_customize->add_setting('themetim_options[divider]', array(
-			'type'              => 'divider_control',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control( new themetim_divider( $wp_customize, 'blog', array(
-			'label' => __('Blog Section', 'themetidy'),
-			'section' => 'blog_settings',
-			'settings' => 'themetim_options[divider]'
-		) )
-	);
-	$wp_customize->add_setting( 'blog_sidebar_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'blog_sidebar_enable', array(
-		'label' => __( 'Enable Sidebar', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('', 'text_domain'),
-		'section' => 'blog_settings',
-		'settings' => 'blog_sidebar_enable'
-	) );
-	$wp_customize->add_setting( 'excerpt_lenght', array(
-		'default'           => '60',
-	) );
-	$wp_customize->add_control( 'excerpt_lenght', array(
-		'type'        => 'number',
-		'section'     => 'blog_settings',
-		'settings' => 'excerpt_lenght',
-		'label'       => __('Excerpt length', 'text_domain'),
-		'description' => __('Excerpt length Default: 60 words', 'text_domain'),
-		'input_attrs' => array(
-			'min'   => 10,
-			'max'   => 200,
-			'step'  => 5,
-		),
-	) );
-	$wp_customize->add_setting( 'blog_social_sharing_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'blog_social_sharing_enable', array(
-		'label' => __( 'Enable Social Sharing', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('', 'text_domain'),
-		'section' => 'blog_settings',
-		'settings' => 'blog_social_sharing_enable'
 	) );
 
 	/*********************************************
@@ -1306,7 +1098,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_font_family',
 		array(
-			'default' => 'Asul',
+			'default' => 'Lato',
 			'capability'     => 'edit_theme_options'
 		)
 	);
@@ -1354,7 +1146,7 @@ function themetim_customize_register( $wp_customize ) {
 		'description'   => __('', 'text_domain')
 	) );
 	$wp_customize->add_setting( 'body_font_weight', array(
-		'default'           => '300,400',
+		'default'           => '400',
 	) );
 	$wp_customize->add_control( 'body_font_weight', array(
 		'label' => __( 'Font Weight', 'text_domain' ),
@@ -1364,7 +1156,7 @@ function themetim_customize_register( $wp_customize ) {
 		'description'   => __('', 'text_domain')
 	) );
 	$wp_customize->add_setting('heading_font_family', array(
-		'default'        => 'Asul',
+		'default'        => 'Lato',
 		'capability'     => 'edit_theme_options',
 	));
 	$wp_customize->add_control( 'heading_font_family', array(
@@ -1398,7 +1190,7 @@ function themetim_customize_register( $wp_customize ) {
 		),
 	));
 	$wp_customize->add_setting( 'heading_font_weight', array(
-		'default'           => '400,700',
+		'default'           => '700',
 	) );
 	$wp_customize->add_control( 'heading_font_weight', array(
 		'label' => __( 'Font Weight', 'text_domain' ),
@@ -1407,62 +1199,7 @@ function themetim_customize_register( $wp_customize ) {
 		'settings' => 'heading_font_weight',
 		'description'   => __('', 'text_domain')
 	) );
-	/**
-	 * ThemeTim Divider
-	 */
-	$wp_customize->add_setting('themetim_options[divider]', array(
-			'type'              => 'divider_control',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control( new themetim_divider( $wp_customize, 'section_gap', array(
-			'label' => __('Section Gap', 'themetidy'),
-			'section' => 'typography',
-			'settings' => 'themetim_options[divider]'
-		) )
-	);
 
-	$wp_customize->add_setting( 'section_gap_1', array(
-		'default'           => '80',
-	) );
-	$wp_customize->add_control( 'section_gap_1', array(
-		'label' => __( 'Section Gap 1', 'text_domain' ),
-		'type' => 'number',
-		'section' => 'typography',
-		'settings' => 'section_gap_1',
-		'description'   => __('', 'text_domain')
-	) );
-	$wp_customize->add_setting( 'section_gap_2', array(
-		'default'           => '80',
-	) );
-	$wp_customize->add_control( 'section_gap_2', array(
-		'label' => __( 'Section Gap 2', 'text_domain' ),
-		'type' => 'number',
-		'section' => 'typography',
-		'settings' => 'section_gap_2',
-		'description'   => __('', 'text_domain')
-	) );
-	$wp_customize->add_setting( 'section_gap_3', array(
-		'default'           => '50',
-	) );
-	$wp_customize->add_control( 'section_gap_3', array(
-		'label' => __( 'Section Gap 3', 'text_domain' ),
-		'type' => 'number',
-		'section' => 'typography',
-		'settings' => 'section_gap_3',
-		'description'   => __('', 'text_domain')
-	) );
-	$wp_customize->add_setting( 'section_gap_4', array(
-		'default'           => '50',
-	) );
-	$wp_customize->add_control( 'section_gap_4', array(
-		'label' => __( 'Section Gap 4', 'text_domain' ),
-		'type' => 'number',
-		'section' => 'typography',
-		'settings' => 'section_gap_4',
-		'description'   => __('', 'text_domain')
-	) );
 
 
 }

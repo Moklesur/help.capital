@@ -28,10 +28,10 @@
 				<div class="row">
 					<!--------------- Primary Menu ---------------->
 					<nav class="navbar navbar-default primary-menu text-capitalize">
-						<div class="logo pull-left">
+						<div class="logo">
 							<?php
 							if (get_theme_mod('site_logo') != '') : ?>
-								<a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_mod('site_logo'); ?>" class="img-responsive" alt="" /></a>
+								<a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_mod('site_logo'); ?>" class="img-responsive center-block" alt="" /></a>
 							<?php else : ?>
 								<h1 class="site-title margin-null"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></p>
@@ -44,9 +44,6 @@
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<ul class="list-inline request-account pull-right">
-							<li><a href="#" class="request-button display-inline-b" data-toggle="modal" data-target="#request-a-quote">request a quote</a></li>
-						</ul>
 						<div id="navbar-collapse" class="navbar-collapse collapse text-center">
 							<?php
 							if ( has_nav_menu( 'primary' ) ) :
@@ -60,15 +57,3 @@
 			</div>
 		</section>
 	</header>
-	<?php if ( class_exists( 'WooCommerce' ) && !is_front_page()) {?>
-	<!--------------- Woo Breadcrumb ---------------->
-	<section class="breadcrumb-wrap text-capitalize">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<?php woocommerce_breadcrumb(); ?>
-				</div>
-			</div>
-		</div>
-	</section>
-<?php }

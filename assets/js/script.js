@@ -4,19 +4,6 @@
  ********************************************************/
 var $ = jQuery;
 $(function(){
-
-    /*******************************************************************************
-     * Header
-     *******************************************************************************/
-    var head = $( 'header' ).height();
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > head){
-            $('.header').addClass("sticky");
-        }
-        else{
-            $('.header').removeClass("sticky");
-        }
-    });
     /*******************************************************************************
      * Body Animation
      *******************************************************************************/
@@ -26,7 +13,7 @@ $(function(){
             outClass: 'fade-out',
             inDuration: 1500,
             outDuration: 800,
-            linkElement: '.navbar-nav>li>a',
+            linkElement: 'a:not([target="_blank"]):not([href^="#"])',
             // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
             loading: true,
             loadingParentElement: 'body', //animsition wrapper element
@@ -54,11 +41,5 @@ $(function(){
         target: $('body'),
         container: $(window)
     });
-
-
-    $('#myModal').on('hidden.bs.modal', function (e) {
-        //$("#myModal").show();
-    });
-
 
 });

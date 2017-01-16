@@ -13,53 +13,42 @@
         ## Min Width 992px And Max Width 1199px
 ********************************************************/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .portfolio-details {
-        top: 20%;
-        padding: 15px;
+    .padding-fix {
+        padding: 0 15px;
     }
-    .portfolio-details h1 {
-        font-size: 24px;
+    .primary-menu ul li a {
+        padding: 20px 15px;
     }
-    .contact-details-fix {
-        padding: 30px;
+    .type-wrap {
+        top: 30%;
+    }
+    .type-inner {
+        max-width: 900px;
+    }
+    .type-inner h1 {
+        font-size: 36px;
     }
 }
 /********************************************************
         ## Min Width 768px And Max Width 991px
 ********************************************************/
 @media (min-width: 768px) and (max-width: 991px){
-    .padding-fix {
-        padding: 0 30px;
-    }
-    .navbar-collapse{
-        padding: 0;
-    }
-    .primary-menu ul li a,.sticky .primary-menu ul li a {
-        padding: 20px 10px;
+    .primary-menu ul li a {
+        padding: 20px 8px;
         font-size: 14px;
     }
-    .request-account .request-button:focus, .request-account .request-button {
-        padding: 20px 5px;
-    }
-    .type-inner {
-        max-width: 630px;
+    .type-wrap {
+        top: 22%;
+        padding: 0 15px;
     }
     .type-inner h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
-    .typed-cursor {
-        font-size: 62px;
+    .padding-fix {
+        padding: 0 15px;
     }
-    .request-a-quote .modal-dialog {
-        width: 750px;
-    }
-    .our-service {
-        margin-bottom: 40px;
-    }
-    .phone-email-skype span{
-        background: #00e06d;
-        border: 1px solid #00e06d;
-        color: #fff;
+    .navbar-collapse.collapse{
+        padding: 0;
     }
 }
 /********************************************************
@@ -106,13 +95,13 @@
     }
     .navbar-default .navbar-toggle{
         margin-right: 0;
-        border-color: #00e06d;
+        border-color: #000;
     }
     .navbar-default .navbar-toggle .icon-bar{
-        background-color: #00e06d;
+        background-color: #000;
     }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-        background-color: #00e06d;
+        background-color: #000;
     }
     .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
         background-color: #fff;
