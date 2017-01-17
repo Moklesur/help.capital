@@ -203,7 +203,7 @@ p,.woocommerce-Address address {
 	padding-right: 25px;
 }
 .request-account .request-button{
-	background: #00e06d;
+	background: #fec826;
 	color: #fff;
 	position: relative;
 }
@@ -222,7 +222,7 @@ p,.woocommerce-Address address {
 	bottom: 0;
 	left: -17px;
 	border-style: solid;
-	border-color: transparent #00e06d transparent transparent;
+	border-color: transparent #fec826 transparent transparent;
 	border-width: 64px 17px 0 0;
 }
 /********************************************************
@@ -271,7 +271,7 @@ p,.woocommerce-Address address {
 	min-height: 195px;
 }
 .testimonial blockquote{
-	border-color: #00e06d;
+	border-color: #fec826;
 }
 .testimonial{
 	margin: 0 auto;
@@ -282,14 +282,14 @@ p,.woocommerce-Address address {
 	font-size: 20px;
 }
 .portfolio-list:hover .portfolio-text a{
-	border-color: #00e06d;
+	border-color: #fec826;
 	color: #fff;
-	background: #00e06d;
+	background: #fec826;
 }
 .portfolio-text a{
 	display: inline-block;
 	padding: 5px 20px;
-	border: 2px solid #00e06d;
+	border: 2px solid #fec826;
 	margin-top: 20px;
 	border-radius: 25px;
 }
@@ -342,10 +342,10 @@ p,.woocommerce-Address address {
 	height: 30px;
 }
 .carousel-indicators li{
-	border-color: #00e06d;
+	border-color: #fec826;
 }
 .carousel-indicators .active{
-	background-color: #00e06d;
+	background-color: #fec826;
 }
 .services .carousel-indicators{
 	left: auto;
@@ -367,7 +367,7 @@ p,.woocommerce-Address address {
 	text-transform: capitalize;
 }
 .services .item h1 span {
-	background: #00e06d;
+	background: #fec826;
 	color: #fff;
 	display: inline-block;
 	padding: 7px 15px;
@@ -416,7 +416,7 @@ p,.woocommerce-Address address {
 	padding: 10px 30px;
 }
 div.wpcf7-mail-sent-ok {
-	border: 2px solid #00e06d;
+	border: 2px solid #fec826;
 }
 .request-a-quote div.wpcf7-mail-sent-ok{
 	overflow: hidden;
@@ -479,8 +479,8 @@ div.wpcf7-mail-sent-ok {
 	top: 5px;
 }
 .phone-email-skype:hover  span,.phone-icon.phone-email-skype span{
-	background: #00e06d;
-	border: 1px solid #00e06d;
+	background: #fec826;
+	border: 1px solid #fec826;
 	color: #fff;
 }
 .phone-email-skype span{
@@ -538,10 +538,10 @@ div.wpcf7-mail-sent-ok {
 }
 
 .animsition-loading {
-	border-top: 4px solid #00e06d;
-	border-right: 4px solid #00e06d;
+	border-top: 4px solid #fec826;
+	border-right: 4px solid #fec826;
 	border-bottom: 4px solid #333;
-	border-left: 2px solid #00e06d;
+	border-left: 2px solid #fec826;
 	width: 45px;
 	height: 45px;
 }
@@ -576,7 +576,7 @@ div.wpcf7-mail-sent-ok {
 .type-inner{
 	max-width: 1000px;
 	margin: 0 auto;
-	text-align: left;
+	text-align: center;
 }
 .type-inner h1{
 	line-height: 1.6;

@@ -9,6 +9,7 @@ require get_template_directory() . '/inc/widget/recent-blog-news/recent-blog-new
  * ThemeTim SiteOrigin Widgets.
  */
 if ( class_exists( 'SiteOrigin_Widget' ) ) {
+    require get_template_directory() . '/inc/widget/client/client.php';
     require get_template_directory() . '/inc/widget/editor/editor.php';
     require get_template_directory() . '/inc/widget/services/services.php';
     require get_template_directory() . '/inc/widget/portfolio/portfolio.php';

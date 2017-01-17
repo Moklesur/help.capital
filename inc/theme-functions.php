@@ -14,7 +14,7 @@
 function bottom_footer_copyright(){
     ?>
     <div class="site-info">
-        <p><?php echo get_theme_mod('bottom_footer_copyright','© <a href="http://pandorapark.com/">PandoraPark</a> All Rights Reserved.'); ?></p>
+        <p><?php echo get_theme_mod('bottom_footer_copyright','© help.capital All Rights Reserved & Build By <a href="http://pandorapark.com/">PandoraPark</a>'); ?></p>
     </div>
     <?php
 }

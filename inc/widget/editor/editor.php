@@ -1,6 +1,6 @@
 <?php
 /**
- * Team widget.
+ * Editor widget.
  *
  * @package themetim
  */
