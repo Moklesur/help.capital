@@ -158,9 +158,15 @@ p,.woocommerce-Address address {
 	margin-bottom: 50px;
 	font-size: 40px;
 }
+button, input, select, textarea {
+	border: 1px solid #fec826;
+}
 /********************************************************
     ## Header
 ********************************************************/
+.header{
+	border-bottom: 1px solid #fec826;
+}
 .logo{
 	margin-top: 5px;
 }
@@ -260,6 +266,64 @@ p,.woocommerce-Address address {
 .editor-details ol li{
 	line-height: 29px;
 	padding-bottom: 15px;
+}
+.our-clients ol li{
+	display: inline-block;
+	width: 30%;
+	float: left;
+	padding: 50px 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 15px;
+	border-top: 3px solid #1593d0;
+	min-height: 161px;
+}
+.our-clients ol li:nth-child(2){
+	border-color: #fec826;
+}
+.our-clients ol li:last-child{
+	border-color: #ccdb38;
+}
+.our-clients ol li:last-child ,.our-clients ol li:first-child{
+	padding-top: 65px;
+}
+.how-we-are-different ol li .fa{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: -30px;
+	left: 0;
+}
+.how-we-are-different ol{
+	list-style: none;
+	padding: 0;
+}
+.how-we-are-different ol li{
+	display: inline-block;
+	float: left;
+	width: 46%;
+	padding: 60px 30px 30px;
+	border: 2px solid #fec826;
+	min-height: 210px;
+	margin:35px 15px 15px;
+	position: relative;
+	border-radius: 5px;
+}
+.how-we-are-different ol li .fa::before{
+	background: #fec826;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+}
+.how-we-are-different ol li:last-child{
+	padding-top: 70px;
+	border-color:  #ccdb38;
+}
+.how-we-are-different ol li:last-child .fa::before{
+	background:  #ccdb38;
 }
 .we-are-an-agency{
 	padding: 150px 90px 90px;

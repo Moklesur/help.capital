@@ -28,6 +28,15 @@
     .type-inner h1 {
         font-size: 36px;
     }
+    ol{
+        padding: 0;
+    }
+    .our-clients ol li {
+        width: 29%;
+    }
+    .how-we-are-different ol li{
+        width: 45%;
+    }
 }
 /********************************************************
         ## Min Width 768px And Max Width 991px
@@ -49,6 +58,15 @@
     }
     .navbar-collapse.collapse{
         padding: 0;
+    }
+    ol{
+        padding: 0;
+    }
+    .our-clients ol li {
+        width: 29%;
+    }
+    .how-we-are-different ol li{
+        width: 45%;
     }
 }
 /********************************************************
@@ -95,10 +113,10 @@
     }
     .navbar-default .navbar-toggle{
         margin-right: 0;
-        border-color: #000;
+        border-color: #fec826;
     }
     .navbar-default .navbar-toggle .icon-bar{
-        background-color: #000;
+        background-color: #fec826;
     }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
         background-color: #000;
@@ -161,6 +179,13 @@
         background: #00e06d;
         border: 1px solid #00e06d;
         color: #fff;
+    }
+    ol{
+        padding: 0;
+    }
+    .our-clients ol li,.how-we-are-different ol li{
+        margin: 0 0 40px;
+        width: 100%;
     }
 }
 /********************************************************
